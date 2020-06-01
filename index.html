@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+</head>
+
+<body>
+    <div>
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Calculadora</h1>
+                <h2>Realiza operações basicas</h2>
+                <h3>Digite os numeros e depois escolha a operação</h3>
+            </hgroup>
+        </header>
+        <section id="numeros">
+            <p><strong>Digite os Numeros aqui:</strong></p>
+            <p>Primeiro Numero</p>
+            <input type="number" name="txtN1" id="txtN1">
+            <p>Segundo numero</p>
+            <input type="number" name="txtN2" id="txtN2">
+        </section>
+        <section id="operadores">
+            <p> <strong>Escolha uma das operações abaixo</strong> </p>
+            <ul>
+                <li><input type="button" value="Adição" onclick="adicao()"></li>
+                <li><input type="button" value="Subtração" onclick="subtracao()"></li>
+                <li><input type="button" value="Divisão"></li>
+                <li><input type="button" value="Multiplicação"></li>
+            </ul>
+        </section>
+
+        <section id="resultado">
+            <h2>Resuldado:</h2>
+            <p id="result">Resultado da operação</p>
+        </section>
+    </div>
+    <script>
+
+
+        function adicao() { 
+            let num1 = Number(document.getElementById('txtN1').value)
+            let num2 = Number(document.getElementById('txtN2').value)
+            let result = document.getElementById('result')
+            let soma = num1 + num2
+            result.innerHTML = soma
+        }
+
+        function subtracao(){
+            let num1 = Number(document.getElementById('txtN1').value)
+            let num2 = Number(document.getElementById('txtN2').value)
+            let result = document.getElementById('result')
+            let sub = num1 - num2
+            result.innerHTML = sub
+        }
+
+        function divisao(){
+            let num1 = Number(document.getElementById('txtN1').value)
+            let num2 = Number(document.getElementById('txtN2').value)
+            let result = document.getElementById('result')
+            let div = num1 / num2
+            result.innerHTML = div
+        }
+
+        function multiplicacao(){
+            let num1 = Number(document.getElementById('txtN1').value)
+            let num2 = Number(document.getElementById('txtN2').value)
+            let result = document.getElementById('result')
+            let mult = num1 * num2
+            result.innerHTML = mult
+            
+            
+        }
+    </script>
+</body>
+
+</html>

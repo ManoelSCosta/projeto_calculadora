@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+header#cabecalho {
+   margin-left: 200px;
+   margin-right: 300px;
+   text-align: center;
+}
+
+section#numeros {
+    display: block;
+    margin-left: 300px;
+    float: left;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+
+section#operadores {
+    display: block;
+    margin-right: 400px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+section#operadores ul {
+    display: block;
+    position: relative;
+    list-style: none;
+}
+
+section#operadores li {
+    display: grid;
+    padding: 3px;
+}
+
+section#resultado {
+    margin-top: 230px;
+    text-align: left;
+    border: 1px solid black;
+    margin-left: 300px;
+    margin-right: 400px;
+
+}
+
+section#resultado h2 {
+    text-align: center;
+}
+
+section#resultado p{
+    text-align: left;
+    display: block;
+    font: normal 24px Arial;
+    border: 1px solid black;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 100px;
+   
+}
