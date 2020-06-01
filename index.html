@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="calculadora">
         <header id="cabecalho">
             <hgroup>
                 <h1>Calculadora</h1>
@@ -29,8 +29,8 @@
             <ul>
                 <li><input type="button" value="Adição" onclick="adicao()"></li>
                 <li><input type="button" value="Subtração" onclick="subtracao()"></li>
-                <li><input type="button" value="Divisão"></li>
-                <li><input type="button" value="Multiplicação"></li>
+                <li><input type="button" value="Divisão" onclick="divisao()"></li>
+                <li><input type="button" value="Multiplicação" onclick="multiplicacao()"></li>
             </ul>
         </section>
 
@@ -48,6 +48,7 @@
             let result = document.getElementById('result')
             let soma = num1 + num2
             result.innerHTML = soma
+            result.style.color = 'black'
         }
 
         function subtracao(){
@@ -56,6 +57,7 @@
             let result = document.getElementById('result')
             let sub = num1 - num2
             result.innerHTML = sub
+            result.style.color = 'black'
         }
 
         function divisao(){
@@ -64,6 +66,7 @@
             let result = document.getElementById('result')
             let div = num1 / num2
             result.innerHTML = div
+            result.style.color = 'black'
         }
 
         function multiplicacao(){
@@ -72,6 +75,7 @@
             let result = document.getElementById('result')
             let mult = num1 * num2
             result.innerHTML = mult
+            result.style.color = 'black'
             
             
         }
