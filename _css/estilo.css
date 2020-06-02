@@ -1,69 +1,35 @@
 @charset "UTF-8";
 
-
-div#calculadora{
-    border: 1px solid black;
-    background: rgb(214, 103, 103);
-    margin-right: 350px;
-    margin-left: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-header#cabecalho {
-   text-align: center;
-}
-
-section#numeros {
+form fieldset {
+    margin: 10px auto 10px auto;
+    width: 40%;
+    border: solid black 1px;
+    padding: 3%;
+ }
+ 
+ form legend {
+    padding: 6px;
+    margin: 10px;
+    border: solid black 1px;
+    font-size: 90%;
+    font-weight: bold;
+    background-color: #e8e8e8;
+ }
+ 
+ form label {
     display: block;
-    float: left;
-    border: 1px solid black;
-    padding-left: 20px;
-    padding-right: 70px;
-    padding-bottom: 10px;
-}
-
-section#numeros input {
-    font-size: 18px;
-    padding-right: -50px;
-}
-
-
-section#operadores {
+    font-size: 11px;
+ }
+ 
+ form input {
+    width: 100%;
+    border: solid #ccc 1px;
+    font-size: 11px;
+    margin-bottom: 10px;
+ }
+ 
+ form input.botao {
     display: block;
+    width: auto;
     float: right;
-    text-align: center;
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-}
-
-section#operadores ul {
-    display: block;
-    position: relative;
-    list-style: none;
-}
-
-section#operadores li {
-    display: grid;
-    padding: 4.9px;
-}
-
-section#resultado {
-    margin-top: 230px;
-    text-align: left;
-    border: 1px solid black;
-    padding-left: 20px;
-
-}
-
-section#resultado p{
-    font: normal 24px Arial;
-    border: 1px solid black;
-    color: gray;
-    margin-right: 100px;
-    background-color: white;
-   
-}
+ }
